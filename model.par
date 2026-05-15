@@ -1,0 +1,51 @@
+runmode
+    reference 3 180.1625 -1.4520
+    inverse   3 0.10 3000
+    end
+
+image
+    multfile 1 image.dat
+    forme -10
+    end
+
+cosmology
+    H0 73.5
+    omega 0.3
+    lambda 0.7
+    end
+
+
+grille
+    nlens 10
+    nlens_opt 3
+    nombre 128
+    end
+
+
+#################################################
+# Cluster Halo 1 (z ~ 0.268)
+#################################################
+
+potentiel 1
+    profil      81
+    x_centre    -7.2
+    y_centre    2.0
+    ellipticite 0.20
+    angle_pos   20.0
+    core_radius 5.0
+    cut_radius  1500.0
+    v_disp      700.0
+    z_lens      0.268
+    end
+
+limit 1
+    x_centre    1 -15.0 5.0 0.1
+    y_centre    1 -10.0 10.0 0.1
+    ellipticity 1 0.0 0.5 0.01
+    angle_pos   1 -90.0 90.0 0.1
+    core_radius 1 0.1 30.0 0.1
+    v_disp      1 300.0 1200.0 1.0
+    end
+
+
+fini
