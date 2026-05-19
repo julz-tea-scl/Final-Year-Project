@@ -1,0 +1,53 @@
+runmode
+	reference	3 180.1625 -1.4520 180.162500 -1.452000
+	inverse	3 0.050000 1000
+	end
+image
+	multfile	1 images.dat
+	forme		-10
+	end
+cosmology
+	H0	73.500000
+	omega	0.300000
+	lambda	0.700000
+	kcourb	0.000000
+	end
+verbose
+grille
+	nlens	100
+	nlens_opt	4
+	nombre		128
+	end
+potentiel
+0
+	profil		81
+	x_centre	-7.200000
+	y_centre	2.000000
+	ellipticite	0.200000
+	angle_pos	20.000000
+	core_radius	5.000000
+	cut_radius	1500.000000
+	v_disp		2700.000000
+	z_lens		0.268000
+	end
+limit
+0
+	x_centre	1 -15.000000 5.000000 0.100000
+	y_centre	1 -10.000000 10.000000 0.100000
+	core_radius	1 1.000000 30.000000 0.100000
+	v_disp		1 2300.000000 3500.000000 1.000000
+	end
+fini
+For z_s = 0.8000  DLS/DS:0.6141
+DLS:0.2221(lt) 905.76(Mpc) DOS:0.3616(lt) 1474.96(Mpc)
+DOL:0.1981(lt) 808.01(Mpc) DOL_lum:0.3185(lt) 1299.14(Mpc)
+Mcrit:3.350827e-03 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.268000, 1 arcsec == 3.917 kpc
+Number of Clumps: 1
+-------- Clump O1: PIEMD Kovner, truncated
+ Total mass: 51872.840252(cor) 46796.227058 (10^12 M_sol)
+ rcut:1500.00(") 5876.03(kpc)
+ vdisp:2700.00(km/s) b0:315.3641
+ rc:5.00(") 19.59(kpc)
+ rt:1500.00(") 5876.03(kpc)
+ r_ct:0.0000 r_cr:0.0000
