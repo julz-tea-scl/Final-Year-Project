@@ -1,0 +1,47 @@
+runmode
+    reference 3 0.0 0.0
+    inverse 3 0.1
+    minchi 1.0
+    verbose 1
+    end
+
+grille
+    nlens 1
+    nlens_opt 1
+    nlens_crit 1
+    end
+
+potentiel lens1
+    profil 3
+    x_centre_wcs 0.0
+    y_centre_wcs 0.0
+    ellipticite 0.0
+    angle_pos 0.0
+    core_radius_kpc 0.001
+    v_disp 200.0
+    z_lens 0.3
+    end
+
+limit lens1
+    #x_centre 0 -1.0 1.0 0.01
+    #y_centre 0 -1.0 1.0 0.01
+    #ellipticite 0 0.0 0.0 0.0
+    #angle_pos 0 0.0 0.0 0.0
+    #core_radius 0 0.001 0.001 0.0
+    v_disp 1 190.0 210.0 1.0
+    end
+
+cosmology
+    H0 73.5
+    omega 0.3
+    lambda 0.7
+    end
+
+image
+    multfile 1 image.cat
+    mult_wcs 1
+    sigpos Arcsec 0.01
+    forme -1
+    end
+
+fini
